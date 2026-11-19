@@ -1,0 +1,103 @@
+{
+ "samples_healthy": 2000000,
+ "false_alarms_per_1M": {
+  "cusum": 0.5,
+  "raw>+18": 1391.5,
+  "raw>+24": 33.5,
+  "raw>+30": 0.0,
+  "ewma>+5": 492.00000000000006,
+  "ewma>+6": 54.5,
+  "ewma>+8": 0.5
+ },
+ "drift": {
+  "cusum": {
+   "detected": "300/300",
+   "median": 129.5,
+   "p90": 196.4000000000001
+  },
+  "raw>+18": {
+   "detected": "300/300",
+   "median": 93.0,
+   "p90": 160.0
+  },
+  "raw>+24": {
+   "detected": "300/300",
+   "median": 206.0,
+   "p90": 311.1
+  },
+  "raw>+30": {
+   "detected": "300/300",
+   "median": 321.0,
+   "p90": 455.20000000000005
+  },
+  "ewma>+5": {
+   "detected": "300/300",
+   "median": 73.0,
+   "p90": 109.0
+  },
+  "ewma>+6": {
+   "detected": "300/300",
+   "median": 88.0,
+   "p90": 137.30000000000007
+  },
+  "ewma>+8": {
+   "detected": "300/300",
+   "median": 125.0,
+   "p90": 189.10000000000002
+  }
+ },
+ "step": {
+  "cusum": {
+   "detected": "300/300",
+   "median": 2.0,
+   "p90": 3.1000000000000227
+  },
+  "raw>+18": {
+   "detected": "300/300",
+   "median": 0.0,
+   "p90": 1.0
+  },
+  "raw>+24": {
+   "detected": "300/300",
+   "median": 0.0,
+   "p90": 6.0
+  },
+  "raw>+30": {
+   "detected": "300/300",
+   "median": 1.0,
+   "p90": 46.0
+  },
+  "ewma>+5": {
+   "detected": "300/300",
+   "median": 1.0,
+   "p90": 3.0
+  },
+  "ewma>+6": {
+   "detected": "300/300",
+   "median": 1.0,
+   "p90": 3.0
+  },
+  "ewma>+8": {
+   "detected": "300/300",
+   "median": 2.0,
+   "p90": 4.100000000000023
+  }
+ },
+ "config": {
+  "data_w": 12,
+  "frac": 4,
+  "calib_log2": 7,
+  "ewma_k": 3,
+  "cusum_k": 96,
+  "cusum_h": 720,
+  "summary_n": 64
+ },
+ "bandwidth": {
+  "samples": 64000,
+  "raw_bytes": 192000,
+  "event_bytes_healthy": 6000,
+  "reduction_healthy": 32.0,
+  "event_bytes_with_fault": 6030,
+  "reduction_with_fault": 31.8407960199005
+ }
+}
