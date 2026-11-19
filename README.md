@@ -42,10 +42,10 @@ Open-source simulators cannot run mixed VHDL and SystemVerilog directly, so the 
 
 | Device | Logic cells used | Block RAM | Fmax (nextpnr) |
 |---|---|---|---|
-| iCE40 HX8K | 983 / 7,680 (12 %) | 1 / 32 | 38.3 MHz |
-| iCE40 UP5K | 983 / 5,280 (18 %) | 1 / 30 | 14.2 MHz |
+| iCE40 HX8K | 983 / 7,680 (12.8 %) | 1 / 32 | 38.3 MHz |
+| iCE40 UP5K | 983 / 5,280 (18.6 %) | 1 / 30 | 14.2 MHz |
 
-765 LUT4 + 309 carry cells + 336 flip-flops. Both devices meet the 12 MHz target; on the UP5K the margin is small (14.2 vs 12 MHz). Pins were auto-placed, so timing covers the logic only, not board I/O.
+Yosys maps the design to 765 LUT4, 336 flip-flops and 309 carry-chain elements; place-and-route packs these into 983 logic cells (a logic cell holds one LUT4, one carry element and one flip-flop, so the counts do not add up). Both devices meet the 12 MHz target; on the UP5K the margin is small (14.2 vs 12 MHz). Pins were auto-placed, so timing covers the logic only, not board I/O.
 
 ### Detection quality (**simulated**, 2,000,000 healthy samples, 300 drift + 300 step episodes)
 
